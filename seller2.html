@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>House Selling Details</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f2f2f2; 
+        } 
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #fff; 
+            border-radius: 5px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        } 
+        h1 { 
+            text-align: center; 
+        } 
+        form { 
+            margin-top: 20px; 
+        } 
+        label, input, select { 
+            display: block; 
+            margin-bottom: 10px; 
+        } 
+        input, select { 
+            width: 100%; 
+            padding: 10px; 
+        } 
+        button { 
+            background-color: #0051ff; 
+            color: #fff; 
+            padding: 10px 20px; 
+            border: none; 
+            cursor: pointer; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h1>House Selling Details</h1> 
+        <form action="#" method="post"> 
+            <h2>Contact Information</h2> 
+            <label for="full-name">Full Name:</label> 
+            <input type="text" id="full-name" name="full-name" required> 
+             
+            <label for="phone">Phone Number:</label> 
+            <input type="tel" id="phone" name="phone" required> 
+             
+            <label for="email">Email Address:</label> 
+            <input type="email" id="email" name="email" required>
+
+            <h2>Property Information</h2> 
+            <label for="property-images">Upload Images of Property:</label> 
+            <input type="file" id="property-images" name="property-images[]" accept="image/*" multiple> 
+             
+            <label for="property-type">Type of Property:</label> 
+            <select id="property-type" name="property-type"> 
+                <option value="single-family">House</option> 
+                <option value="condo">Flat</option> 
+                <option value="condo">Room</option>
+               
+            </select> 
+
+            <label for="area-square-feet">Number of bedrooms:</label> 
+            <input type="number" id="area-square-feet" name="area-square-feet" required>
+
+            <label for="area-square-feet">Number of bathroom:</label> 
+            <input type="number" id="area-square-feet" name="area-square-feet" required>
+             
+            <label for="area-square-feet">Area in Square Feet:</label> 
+            <input type="number" id="area-square-feet" name="area-square-feet" required> 
+             
+            <label for="year-built">Year Built:</label> 
+            <input type="number" id="year-built" name="year-built" required> 
+             
+            <label for="area-location">Area Location:</label> 
+            <input type="text" id="area-location" name="area-location" required> 
+
+            <h2>Selling Details</h2> 
+            <label for="listing-price">Listing Price:</label> 
+            <input type="number" id="listing-price" name="listing-price" required> 
+             
+            <label for="furnished">Furnished:</label> 
+            <input type="radio" id="furnished-yes" name="furnished" value="yes"> Yes 
+            <input type="radio" id="furnished-no" name="furnished" value="no"> No 
+             
+            <button type="submit">Upload Details</button> 
+        </form> 
+    </div> 
+</body> 
+</html> 
